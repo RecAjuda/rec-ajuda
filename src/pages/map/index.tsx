@@ -1,10 +1,12 @@
 import { MapComponent } from "../../components";
 import Logo from "../../assets/rec-ajuda-icon.svg";
 import { Header } from "./Header";
+import { ModalWeather } from "./ModalWeather";
+import { ModalRisk } from "./ModalRisk";
 
 export const Map = () => {
   return (
-    <div id="map">
+    <div className="z-0 relative h-screen flex items-center justify-content flex-col text-black">
       <Header
         src={Logo}
         altImage="Logo"
@@ -26,6 +28,8 @@ export const Map = () => {
           },
         ]}
       />
+      <ModalWeather mmRain={26} degrees={31} windMileage={20} />
+      <ModalRisk />
     </div>
   );
 };
