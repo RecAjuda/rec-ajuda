@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { MapProps } from "./type";
+import { HeatmapLayerFactory } from "@vgrid/react-leaflet-heatmap-layer";
 // import HeatmapLayer from "react-leaflet-heatmap-layer-v3";
 //useMap
 //{15.5}/{-8.0410559}/{-34.9109886}
@@ -9,6 +10,8 @@ export const MapComponent = ({
   centerMap,
   zoom,
 }: MapProps) => {
+  const HeatmapLayer = HeatmapLayerFactory<number>();
+
   return (
     <>
       <MapContainer
@@ -24,14 +27,15 @@ export const MapComponent = ({
         />
         {popUps.map((popUp) => (
           <>
-            {/* <HeatmapLayer
+            <HeatmapLayer
               fitBoundsOnLoad
               fitBoundsOnUpdate
               points={popUp.geoCode}
-              longitudeExtractor={(m) => m[1]}
-              latitudeExtractor={(m) => m[0]}
-              intensityExtractor={(m) => parseFloat(m[2])}
-            /> */}
+              radius={100}
+              longitudeExtractor={() => popUp.geoCode[1]}
+              latitudeExtractor={() => popUp.geoCode[0]}
+              intensityExtractor={() => 10}
+            />
             <Marker position={popUp.geoCode}>
               <Popup>{popUp.popUpContent}</Popup>
             </Marker>
