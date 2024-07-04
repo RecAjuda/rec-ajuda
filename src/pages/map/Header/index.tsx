@@ -18,7 +18,7 @@ export const Header = ({ altImage, src }: HeaderProps) => {
             <Menu />
           </button>
         </div>
-        <div className="flex-grow flex justify-center h-12 w-24">
+        <div className="flex-grow flex justify-end h-12 w-24">
           <img src={src} alt={altImage} />
         </div>
       </div>
