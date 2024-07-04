@@ -65,7 +65,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <HomeIcon className="w-6 h-6" />
-            <a href="#">Abrigos</a>
+            <a href="http://localhost:5173/shelter">Abrigos</a>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Handshake className="w-6 h-6" />
