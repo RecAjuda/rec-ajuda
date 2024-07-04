@@ -7,12 +7,7 @@ import { ModalRisk } from "./ModalRisk";
 export const Map = () => {
   return (
     <div className="z-0 relative h-screen flex items-center justify-content flex-col text-black">
-      <Header
-        src={Logo}
-        altImage="Logo"
-        onClickBack={() => null}
-        onClickMenu={() => null}
-      />
+      <Header src={Logo} altImage="Logo" />
       <MapComponent
         centerMap={[-8.0410559, -34.9109886]}
         scrollMap={false}
