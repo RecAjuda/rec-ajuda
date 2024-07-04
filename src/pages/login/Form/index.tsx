@@ -5,8 +5,8 @@ import BgLogin from "../../../assets/bg-login.svg";
 export const FormLogin = () => {
   return (
     <>
-      <div className="absolute -top-11">
-        <img className="object-fill w-full" src={BgLogin} alt="logo"></img>
+      <div className="absolute -top-11 sm:-top-80 xs:-top-80">
+        <img className="object-cover w-screen" src={BgLogin} alt="logo"></img>
       </div>
       <div className="font-poppies h-screen flex flex-col px-14 justify-center ">
         <form>
