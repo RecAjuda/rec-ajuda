@@ -4,8 +4,11 @@ export const shelterIcons: Record<string, string> = {
     shelterIcon: ShelterIcon
 }
 
-export type ModalAddressProps = {
-    street: string;
-    cep: string;
+export type ShelterListProps = {
+    shelterName: string;
+    shelterDistance: number;
+    shelterAddress: string;
+    shelterPhone: string;
+    
   };
   
