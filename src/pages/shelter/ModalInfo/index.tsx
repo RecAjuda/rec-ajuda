@@ -6,7 +6,6 @@ export const ModalInfo = () => {
 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchQuery(event.target.value);
-        // Implement search functionality here if needed
     };
 
     return (
