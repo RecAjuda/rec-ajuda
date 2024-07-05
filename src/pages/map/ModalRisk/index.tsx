@@ -14,6 +14,10 @@ export const ModalRisk = () => {
         <div className="w-4 h-4 bg-yellow-500 rounded-full" />
         <p className="font-bold text-sm">Risco moderado</p>
       </div>
+      <div className="flex items-center gap-1">
+        <div className="w-4 h-4 bg-green-400 rounded-full" />
+        <p className="font-bold text-sm">Risco baixo</p>
+      </div>
     </div>
   );
 };

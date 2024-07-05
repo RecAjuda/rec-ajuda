@@ -1,13 +1,9 @@
 import LogoShelter from "../../../assets/shelter/logo.svg";
+import SearchShelter from "../../../assets/shelter/search.svg";
 
 export const shelterIcons: Record<string, string> = {
-    arrow: LogoShelter
+    logo: LogoShelter,
+    search: SearchShelter,
+
 }
 
-export type ModalInfoProps = {
-    altImage: string;
-    src: string;
-    onClickMenu?: () => void;
-    onClickBack?: () => void;
-  };
-  

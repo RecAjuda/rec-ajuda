@@ -1,7 +1,7 @@
 import Logo from "../../assets/rec-ajuda-icon.svg";
 import { Header } from "./Header";
 import { ModalAddress } from "./ModalAddress";
-// import { ModalInfo } from "./ModalInfo";
+import { ModalInfo } from "./ModalInfo";
 
 
 export const Shelter = () => {
@@ -14,8 +14,8 @@ export const Shelter = () => {
                 onClickMenu={() => null}
             />
 
-            <ModalAddress street={"Mirante do Paço - Tv. do Amorim,"} cep={"50030-070"}/>
-            {/* <ModalInfo></ModalInfo> */}
+                <ModalAddress street={"Mirante do Paço - Tv. do Amorim,"} cep={"50030-070"} />
+                <ModalInfo />
         </div>
     );
 };
