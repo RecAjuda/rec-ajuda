@@ -3,7 +3,7 @@ import { SideBar } from "../../../components";
 import { HeaderProps } from "./type";
 import { Menu } from "lucide-react";
 
-export const Header = ({ altImage, src }: HeaderProps) => {
+export const HeaderShelter = ({ altImage, src }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
