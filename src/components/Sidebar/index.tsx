@@ -64,7 +64,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <Map className="w-6 h-6" />
-            <Link to={`${URL_BASE}/map`}>Mapa</Link>
+            <Link to={`${URL_BASE}/`}>Mapa</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <HomeIcon className="w-6 h-6" />
