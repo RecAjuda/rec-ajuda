@@ -80,7 +80,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <PhoneCall className="w-6 h-6" />
-            <a href="#">Telefones úteis</a>
+            <Link to={`${URL_BASE}/contact`}>Telefones úteis</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Bell className="w-6 h-6" />
