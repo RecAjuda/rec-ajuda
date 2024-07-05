@@ -14,6 +14,7 @@ import { SideBarProp } from "./types";
 import TrainingIcon from "../../assets/sidebar/training-icon.svg";
 import BgMenu from "../../assets/bgMenu.svg";
 import IconRec from "../../assets/icon-logo-recife-white.svg";
+import Avatar from "../../assets/avatar-default.svg";
 import { Link } from "react-router-dom";
 
 const URL_BASE = "/rec-ajuda-client";
@@ -51,10 +52,10 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
     >
       <div ref={sidebarRef} className="flex flex-col mt-14 ">
         <div className="flex flex-col gap-2 items-center">
-          <img className="rounded-full bg-slate-950 w-12 h-12" />
+          <img className="rounded-full bg-white w-12 h-12" src={Avatar} />
           <div className="flex gap-1">
             <p className="font-bold text-blue-600">Olá,</p>
-            <p className="font-bold ">{firstNameUser}</p>
+            <p className="font-bold ">{firstNameUser || "Usuário"}</p>
           </div>
         </div>
         <div className="flex flex-col ml-9 mt-14 gap-4">
@@ -84,7 +85,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <Bell className="w-6 h-6" />
-            <a href="#">Notification</a>
+            <Link to={`${URL_BASE}/notification`}>Notification</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Bolt className="w-6 h-6" />
