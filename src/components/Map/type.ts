@@ -1,11 +1,23 @@
-export type PopUpsProps = {
-  geoCode: [number, number];
-  popUpContent: string;
-};
+// export type PopUpsProps = {
+//   geoCode: any;
+//   popUpContent: string;
+// };
 
 export type MapProps = {
-  popUps: Array<PopUpsProps>;
+  popUps: PopsUpProps[];
   zoom?: number;
   scrollMap?: boolean;
   centerMap: [number, number];
+};
+
+export type PopsUpProps = {
+  type: string;
+  geometry: {
+    type: string;
+    coordinates: number[];
+  };
+  properties: {
+    rating: number;
+    restaurant_name: string;
+  };
 };

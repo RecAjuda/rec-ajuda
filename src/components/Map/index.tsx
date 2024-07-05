@@ -1,16 +1,22 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { MapProps } from "./type";
+import { MapContainer, TileLayer } from "react-leaflet";
+import { MapProps, PopsUpProps } from "./type";
 import { HeatmapLayerFactory } from "@vgrid/react-leaflet-heatmap-layer";
-// import HeatmapLayer from "react-leaflet-heatmap-layer-v3";
-//useMap
-//{15.5}/{-8.0410559}/{-34.9109886}
+
 export const MapComponent = ({
   scrollMap,
   popUps,
   centerMap,
   zoom,
 }: MapProps) => {
-  const HeatmapLayer = HeatmapLayerFactory<number>();
+  const HeatmapLayer = HeatmapLayerFactory<number[]>();
+
+  const data = popUps.map((val: PopsUpProps) => {
+    return [
+      val.geometry.coordinates[0],
+      val.geometry.coordinates[1],
+      val.properties.rating,
+    ];
+  });
 
   return (
     <>
@@ -25,22 +31,16 @@ export const MapComponent = ({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {popUps.map((popUp) => (
-          <>
-            <HeatmapLayer
-              fitBoundsOnLoad
-              fitBoundsOnUpdate
-              points={popUp.geoCode}
-              radius={100}
-              longitudeExtractor={() => popUp.geoCode[1]}
-              latitudeExtractor={() => popUp.geoCode[0]}
-              intensityExtractor={() => 10}
-            />
-            <Marker position={popUp.geoCode}>
-              <Popup>{popUp.popUpContent}</Popup>
-            </Marker>
-          </>
-        ))}
+
+        <HeatmapLayer
+          fitBoundsOnLoad
+          fitBoundsOnUpdate
+          points={data}
+          radius={20}
+          longitudeExtractor={(m) => m[1]}
+          latitudeExtractor={(m) => m[0]}
+          intensityExtractor={() => 1}
+        />
       </MapContainer>
     </>
   );
