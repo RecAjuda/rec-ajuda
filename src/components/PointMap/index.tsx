@@ -1,5 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { PointMapType } from "./type";
+import { useEffect } from "react";
 
 
 export const PointMapComponent = ({
@@ -18,7 +19,7 @@ export const PointMapComponent = ({
                     points.map(element => (
                         <Marker  position={[element.latitude, element.longitude]}>
                             <Popup className={`text-${element.color}`}>
-                                {element.description}
+                                {`${element.title}-${element.openStatus}-${element.type}`}
                             </Popup>
                         </Marker>
                     ))
