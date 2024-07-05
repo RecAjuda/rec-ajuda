@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="fixed z-20 bg-white w-screen flex items-center px-3">
+      <div className="fixed z-20 bg-white w-screen flex items-center px-3 shadow-md">
         <div className="text-blue-800 items-center flex h-7 w-7">
           <button onClick={toggleSidebar}>
             <Menu />
