@@ -1,7 +1,7 @@
 
 import { ModalShelter } from "./ModalShelter";
 
-export const Shelter = () => {
+export const ShelterInfo = () => {
   return (
     <div className="flex flex-col justify-center w-screen">
       

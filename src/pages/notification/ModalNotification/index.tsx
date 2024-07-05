@@ -29,14 +29,23 @@ export const ModalNotif = () => {
                 </div>
             </div>
             <div className="h-0.5 w-screen bg-[#D9D9D9]"/>
-            <div className="flex flex-col">
-                <div className="grid grid-cols-3 w-screen mt-3 mb-3">
-                    <img src={iconsNotification["GreenIcon"]}/>
-                    <p>Defesa Civil: ALERTA URGENTE – Devido aos índices acumulados de chuvas, a Defesa Civil do Recife orienta apopulação residente em áreas de risco a deixar suas residências imediatamente e procurar abrigo em locais seguro. A Defesa Civil pode ser acionada pelo fone 0800 081 3400. A ligação é gratuita e acentral funciona 24h.</p>
-                    <p>Elipse</p>
+            <div className="flex flex-col justify-between">
+                <div className="flex gap-6 items-start  w-screen mt-2 mb-3">
+                    <img className="w-10 h-6.8 ml-3.5 mt-1" src={iconsNotification["greenIcon"]}/>
+                    <p className="w-3/1"><strong>Defesa Civil:</strong> ALERTA URGENTE – Devido aos índices acumulados de chuvas, a Defesa Civil do Recife orienta apopulação residente em áreas de risco a deixar suas residências imediatamente e procurar abrigo em locais seguro. A Defesa Civil pode ser acionada pelo fone 0800 081 3400. A ligação é gratuita e acentral funciona 24h.</p>
+                    <img className="w-4 h-4 ml-3.5 mt-1 mr-3.5" src={iconsNotification["elipseIcon"]}/>
                 </div>
                 <div className="flex justify-end mb-3 mr-3">
-                    <p>Hoje, 07:38h</p>
+                    <p className="text-[#2A9DF4]">Hoje, 14:40h</p>
+                </div>
+                <div className="h-0.5 w-screen bg-[#D9D9D9]"/>
+                <div className="flex gap-6 items-start  w-screen mt-2 mb-3">
+                    <img className="w-10 h-6.8 ml-3.5 mt-1" src={iconsNotification["greenIcon"]}/>
+                    <p className="w-3/1"><strong>Defesa Civil:</strong> ALERTA DE CHUVAS INTENSAS/RAIOS na Região Metropolitana do Recife. Monitore e proteja-se em local seguro.</p>
+                    <img className="w-4 h-4 ml-3.5 mt-1 mr-3.5" src={iconsNotification["elipseIcon"]}/>
+                </div>
+                <div className="flex justify-end mb-3 mr-3">
+                    <p className="text-[#2A9DF4]">Hoje, 14:40h</p>
                 </div>
                 <div className="h-0.5 w-screen bg-[#D9D9D9]"/>
                 
