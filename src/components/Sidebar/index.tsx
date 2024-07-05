@@ -76,7 +76,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <img src={TrainingIcon} className="w-6 h-6" />
-            <a href="#">Treinamentos</a>
+            <Link to={`${URL_BASE}/course`}>Treinamentos</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <PhoneCall className="w-6 h-6" />

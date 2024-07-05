@@ -4,6 +4,8 @@ import { Map } from "./pages/map";
 import { Shelter } from "./pages/shelter";
 import { RiskPointMap } from "./pages/RiskPointMap";
 import { Header } from "./components/Header";
+import { Course } from "./pages/course";
+
 
 const URL_BASE = "/rec-ajuda-client";
 
@@ -20,6 +22,8 @@ export function App() {
           path={`${URL_BASE}/RiskPointMap`}
           element={<RiskPointMap></RiskPointMap>}
         />
+        <Route path={`${URL_BASE}/course`} element={<Course />} />
+
       </Routes>
     </>
   );
