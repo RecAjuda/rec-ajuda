@@ -29,9 +29,8 @@ export const ModalContact = () => {
             <div className="flex h-30 mt-20 items-center ">
                 <img className="w-26 h-26" src={contactIcon["greenIcon"]} />
                 <div className="ml-2">
-                    <p className="font-bold text-blue-500 text-lg mb-1">Está com uma emergência? </p>
-                    <br />
-                    <p className="text-xs font-bold text-blue-400 text-base">Veja para quem ligar!</p>
+                    <p className="font-bold text-blue-950 text-lg mb-2">Está com uma emergência? </p>
+                    <p className="text-s font-bold text-blue-400 text-base">Veja para quem ligar!</p>
                 </div>
             </div>
 
@@ -67,7 +66,7 @@ export const ModalContact = () => {
                 <div className="flex flex-col">
                     <div className="flex justify-between mb-2">
                         <div style={{ width: '300px', maxWidth: '55vw' }}>
-                            <p className="font-bold">Recife</p>
+                            <p className="flex-auto font-bold w-111">Recife</p>
                         </div>
                         <div>
                             <p className="text-blue-500 font-bold">0800 081 3400</p>

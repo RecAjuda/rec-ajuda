@@ -84,7 +84,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
           <div className="flex gap-2 text-blue-950">
             <Bell className="w-6 h-6" />
-            <a href="#">Notification</a>
+            <Link to={`${URL_BASE}/notification`}>Notification</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Bolt className="w-6 h-6" />

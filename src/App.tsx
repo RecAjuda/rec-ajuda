@@ -5,6 +5,7 @@ import { Shelter } from "./pages/shelter";
 import { RiskPointMap } from "./pages/RiskPointMap";
 import { Header } from "./components/Header";
 import { Course } from "./pages/course";
+import { Notification } from "./pages/notification";
 import { Contact } from "./pages/contact";
 
 
@@ -26,6 +27,7 @@ export function App() {
         />
         <Route path={`${URL_BASE}/course`} element={<Course />} />
         <Route path={`${URL_BASE}/contact`} element={<Contact />} />
+        <Route path={`${URL_BASE}/notification`} element={<Notification />} />
 
 
       </Routes>
