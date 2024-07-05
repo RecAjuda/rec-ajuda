@@ -8,7 +8,7 @@ export const ModalWeather = ({
   windMileage,
 }: ModalWeatherProps) => {
   return (
-    <div className="absolute z-20 bg-white w-screen top-11 m-2  h-9 px-3 items-center justify-between flex rounded-lg ">
+    <div className="absolute z-20 bg-white w-screen m-2 top-11 h-9 px-3 items-center justify-between flex rounded-lg ">
       <div className="flex mr-12">
         <img className="w-14 h-6" src={LogoRecife} />
       </div>

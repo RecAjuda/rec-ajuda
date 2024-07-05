@@ -100,8 +100,14 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
           </div>
         </div>
         <div>
-          <img className="absolute w-screen bottom-0" src={BgMenu} />
-          <img className="absolute w-82 h-12 bottom-4 left-6" src={IconRec} />
+          <img
+            className="absolute w-screen min-h-700:visible invisible bottom-0"
+            src={BgMenu}
+          />
+          <img
+            className="absolute w-82 h-12 min-h-700:visible invisible bottom-4 left-6"
+            src={IconRec}
+          />
         </div>
       </div>
     </nav>
