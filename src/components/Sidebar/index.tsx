@@ -47,7 +47,7 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
   return (
     <nav
       ref={sidebarRef}
-      className={`absolute z-30 ${isExpanded} flex-col bg-slate-300`}
+      className={`absolute z-40 ${isExpanded} flex-col bg-slate-300`}
     >
       <div ref={sidebarRef} className="flex flex-col mt-14 ">
         <div className="flex flex-col gap-2 items-center">

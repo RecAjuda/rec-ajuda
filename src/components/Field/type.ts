@@ -4,4 +4,5 @@ export type FieldProps = {
   required: boolean;
   style?: string;
   type: React.HTMLInputTypeAttribute | undefined;
+  icon?: string;
 };
