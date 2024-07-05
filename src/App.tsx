@@ -3,6 +3,7 @@ import { FormLogin } from "./pages/login";
 import { Map } from "./pages/map";
 import { Shelter } from "./pages/shelter";
 import { RiskPointMap } from "./pages/RiskPointMap";
+import { Header } from "./components/Header";
 
 const URL_BASE = "/rec-ajuda-client";
 
