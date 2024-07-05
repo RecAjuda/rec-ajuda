@@ -9,6 +9,8 @@ export type PointMapType = {
 export type GeoLocation = {
     latitude : number;
     longitude: number;
-    description : string;  
+    openStatus: string;
+    title : string;   
     color: string; 
+    type : string;
 }
