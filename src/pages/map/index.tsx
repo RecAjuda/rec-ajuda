@@ -12,7 +12,7 @@ export const Map = () => {
       <MapComponent
         centerMap={[-8.0410559, -34.9109886]}
         scrollMap={false}
-        zoom={13}
+        zoom={15}
         popUps={popsUps}
       />
       <ModalWeather mmRain={26} degrees={31} windMileage={20} />

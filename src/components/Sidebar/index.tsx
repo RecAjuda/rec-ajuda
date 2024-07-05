@@ -14,6 +14,9 @@ import { SideBarProp } from "./types";
 import TrainingIcon from "../../assets/sidebar/training-icon.svg";
 import BgMenu from "../../assets/bgMenu.svg";
 import IconRec from "../../assets/icon-logo-recife-white.svg";
+import { Link } from "react-router-dom";
+
+const URL_BASE = "/rec-ajuda-client";
 
 export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
   const isExpanded = isOpen ? "w-56 h-screen left-0" : "z-0";
@@ -57,15 +60,15 @@ export const SideBar = ({ firstNameUser, isOpen, setIsOpen }: SideBarProp) => {
         <div className="flex flex-col ml-9 mt-14 gap-4">
           <div className="flex gap-2 text-blue-950">
             <User2 className="w-6 h-6" />
-            <a href="http://localhost:5173/login">Entrar</a>
+            <Link to={`${URL_BASE}/login`}>Entrar</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Map className="w-6 h-6" />
-            <a href="http://localhost:5173/map">Mapa</a>
+            <Link to={`${URL_BASE}/map`}>Mapa</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <HomeIcon className="w-6 h-6" />
-            <a href="http://localhost:5173/shelter">Abrigos</a>
+            <Link to={`${URL_BASE}/shelter`}>Abrigos</Link>
           </div>
           <div className="flex gap-2 text-blue-950">
             <Handshake className="w-6 h-6" />
