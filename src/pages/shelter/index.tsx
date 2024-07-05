@@ -11,38 +11,38 @@ export const Shelter = () => {
       {/* </div> */}
       <div className="flex flex-col items-end gap-4">
         <ModalShelter
-          street="Rua da Regeneração, 345"
+          street="Rua São Mateus, s/n, Iputinga"
           phone="(81) 987655-0989"
-          near="0.2"
-          title="ABRIGO DOS AMIGOS"
+          near="3.2"
+          title="Escola Municipal Diná de Oliveira"
           changedStyles
         />
         <ModalShelter
-          street="Rua da Regeneração, 345"
+          street="Av. Pernambuco, s/n, UR 01, Cohab"
           phone="(81) 987655-0989"
-          near="0.2"
-          title="ABRIGO DOS AMIGOS"
+          near="7.3"
+          title="Escola Municipal Maria de Sampaio Lucena"
           changedStyles={false}
         />
         <ModalShelter
           street="Rua da Regeneração, 345"
           phone="(81) 987655-0989"
           near="0.2"
-          title="ABRIGO DOS AMIGOS"
+          title="CENTRO DE APOIO SOCIAL ESPORTIVO E CULTURAL DO IBURA"
           changedStyles
         />
         <ModalShelter
-          street="Rua da Regeneração, 345"
+          street="R. Tucumã, 127 - Ibura"
           phone="(81) 987655-0989"
-          near="0.2"
-          title="ABRIGO DOS AMIGOS"
+          near="8.3 "
+          title="IGREJA ORAI"
           changedStyles={false}
         />
         <ModalShelter
-          street="Rua da Regeneração, 345"
+          street="Travessa Benigno Jordão de Vasconcelos, n 41"
           phone="(81) 987655-0989"
-          near="0.2"
-          title="ABRIGO DOS AMIGOS"
+          near="6.3"
+          title="ASSOCIAÇÃO ASA BRANCA "
           changedStyles
         />
       </div>
