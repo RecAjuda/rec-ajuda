@@ -1,5 +1,5 @@
 {
-  "homepage": "hhtps://setoue.github.io/rec-ajuda-client",
+  "homepage": "https://setoue.github.io/rec-ajuda-client",
   "name": "rec-ajuda",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run deploy gh-pages -d dist"
   },
   "dependencies": {
     "@vgrid/react-leaflet-heatmap-layer": "^4.0.3",
