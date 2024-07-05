@@ -15,6 +15,7 @@ export const FormLogin = () => {
             <Label content="CPF" />
           </div>
           <Field
+            style="w-screen"
             placeholder="Digite seu CPF"
             type="number"
             id="username"
@@ -26,6 +27,7 @@ export const FormLogin = () => {
             <Label content="Senha" />
           </div>
           <Field
+            style="w-screen"
             placeholder="Digite sua senha"
             type="password"
             id="password"

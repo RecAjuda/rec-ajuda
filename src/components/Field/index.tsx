@@ -18,7 +18,7 @@ export const Field = ({
         />
       )}
       <input
-        className={`shadow-gray-400 shadow-md border rounded-md w-full h-9 py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${style}`}
+        className={`shadow-gray-400 shadow-md border rounded-md h-9 py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${style}`}
         id={id}
         type={type}
         placeholder={placeholder}
